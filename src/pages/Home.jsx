@@ -3,7 +3,7 @@ import {
   ChevronUp
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-// Example: resize to max 200px width, auto height, export as webp
+// Example: resize  max 200px width, auto height, export as webp
 import fireside from './../assets/fire.jpeg?w=200&format=webp&imagetools'
 import wallet from './../assets/wallet.jpeg?w=200&format=webp&imagetools'
 import brainstorm from './../assets/brain.jpeg?w=200&format=webp&imagetools'
