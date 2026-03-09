@@ -33,7 +33,7 @@ function App() {
           <Route path='/unlock' element={<WalletUnlock />} />
           <Route path='/home' element={<Home />} />
           <Route path='/loading' element={<LoadingGif />} />
-          <Route path='/kimeumana' element ={<Dashboard/>}/>
+          <Route path='/kimeumanaaa' element ={<Dashboard/>}/>
           {/* Redirect all unknown paths to loading */}
           <Route path='*' element={<LoadingGif />} />
         </Routes>
