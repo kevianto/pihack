@@ -41,7 +41,7 @@ const Home= () => {
     { name: 'Profile', icon: profile, color: 'text-purple-600' },
     { name: 'Domain', icon: domain, color: 'text-purple-600' },
     { name: 'App Studio', icon: studio, color: 'text-purple-600' },
-    { name: 'Swap', icon: swap, color: 'text-purple-600' },
+    { name: 'Pi chainmall', icon: swap, color: 'text-purple-600' },
     { name: 'Lockups', icon: lockups, color: 'text-purple-600' },
   ];
 
