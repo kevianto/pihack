@@ -46,22 +46,30 @@ const Home= () => {
       name: 'Launchpad', 
       icon: (
         <svg viewBox="0 0 100 100" className="w-14 h-14">
-          {/* Flame */}
-          <path d="M50 85 Q45 95 50 100 Q55 95 50 85" fill="#fbb44a" />
-          <path d="M50 80 Q47 88 50 92 Q53 88 50 80" fill="#fbb44a" opacity="0.8" />
+          {/* Rounded Border */}
+          <rect x="4" y="4" width="92" height="92" rx="20" fill="none" stroke="#703d92" strokeWidth="2.5" />
           
-          {/* Rocket Body */}
-          <path d="M50 10 C35 40 35 75 50 85 C65 75 65 40 50 10" fill="#703d92" />
+          {/* Semi-circle at bottom */}
+          <path d="M22 82 A28 28 0 0 1 78 82" fill="none" stroke="#703d92" strokeWidth="6" strokeLinecap="round" />
           
-          {/* Fins */}
-          <path d="M38 65 L25 80 L38 75 Z" fill="#703d92" />
-          <path d="M62 65 L75 80 L62 75 Z" fill="#703d92" />
-          
-          {/* Pi Symbol on Rocket */}
-          <g transform="translate(42, 40) scale(0.06)" fill="white">
+          {/* Pi Symbol inside */}
+          <g transform="translate(33, 62) scale(0.042)" fill="#703d92">
             <path d="M94.91 66.314c0-1.078.875-1.953 1.954-1.953h18.878c1.079 0 1.953.875 1.953 1.953v14.973a1.953 1.953 0 0 1-1.953 1.953H96.863a1.953 1.953 0 0 1-1.953-1.953V66.314ZM133.97 66.314c0-1.078.875-1.953 1.953-1.953h18.879c1.079 0 1.953.875 1.953 1.953v14.973a1.953 1.953 0 0 1-1.953 1.953h-18.879a1.953 1.953 0 0 1-1.953-1.953V66.314Z"></path>
             <path d="M94.91 115.616v77.765l22.785 8.992v-86.757h16.275v77.765l22.785 8.992v-86.757h15.14c12.491 0 22.618-10.234 22.618-22.858V79.985h-22.618v12.773H80.422c-12.492 0-22.618 10.234-22.618 22.858v15.798h22.618v-15.798h14.489Z"></path>
           </g>
+
+          {/* Arrows and Circles */}
+          {/* Left */}
+          <circle cx="28" cy="38" r="7" fill="none" stroke="#703d92" strokeWidth="4.5" />
+          <path d="M28 58 V49 M24 53 L28 49 L32 53" fill="none" stroke="#703d92" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round" />
+          
+          {/* Middle */}
+          <circle cx="50" cy="28" r="7" fill="none" stroke="#703d92" strokeWidth="4.5" />
+          <path d="M50 53 V40 M46 44 L50 40 L54 44" fill="none" stroke="#703d92" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round" />
+          
+          {/* Right */}
+          <circle cx="72" cy="42" r="7" fill="none" stroke="#703d92" strokeWidth="4.5" />
+          <path d="M72 62 V53 M68 57 L72 53 L76 57" fill="none" stroke="#703d92" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       ), 
       isComponent: true, 
