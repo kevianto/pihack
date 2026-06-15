@@ -41,8 +41,8 @@ const Home= () => {
     { name: 'Chat', icon: chat, color: 'text-purple-600' },
     { name: 'Profile', icon: profile, color: 'text-purple-600' },
     { name: 'Domain', icon: domain, color: 'text-purple-600' },
+    { name: 'App Studio', icon: studio, color: 'text-purple-600' },
     { name: 'Launchpad', icon: <Rocket className="w-14 h-14 text-[#703d92]" />, isComponent: true, color: 'text-purple-600' },
-    { name: 'Lockups', icon: lockups, color: 'text-purple-600' },
   ];
 
   return (
